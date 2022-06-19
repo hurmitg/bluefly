@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="information.css">
+    <title>Shipping</title>
+</head>
+<body>
+    <div id="infoBox">
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?187388" alt="">
+        <div>
+            <span>Cart </span> >
+            <b>Shipping</b>
+        </div>
+        <div id="info">
+            <form id="infoForm" action="">
+                <h2>Shipping Address</h2>
+                <input type="text" required id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="text" required id="address" placeholder="Address">
+                <input type="text" required id="optionalAdress" placeholder="Apartment, suite, etc. (optional)">
+                <input type="text" required id="city" placeholder="City">
+                <input type="text" required id="country" placeholder="Country">
+                <input type="text" required id="state" placeholder="State">
+                <input type="number" required id="zip" placeholder="Zip Code">
+                <input type="number" required id="phone" placeholder="Phone Number">
+                <div id="formBottom">
+                    <p>< Return to Cart</p>
+                    <button type="submit">Continue to Payment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="discountsAndTotal">
+        <div id="infoCart">
+
+        </div>
+        <div id="promo">
+            <input type="text" placeholder="Gift Card or Discount Code">
+            <button id="apply">Apply</button>
+            <p></p>
+        </div>
+        <div id="cartTotal">
+            <p><span>Subtotal</span> <span class="total">$147</span></p>
+            <p><span>Shipping</span> <span>Free</span></p>
+            <p><span>Discount</span> <span class="discount">0</span></p>
+        </div>
+        <div id="finalTotal">
+            <p><span>Total</span> <span class="discounted"></span></p>
+        </div>
+
+    </div>
+    
+</body>
+<script src = "information.js"></script>
+</html>

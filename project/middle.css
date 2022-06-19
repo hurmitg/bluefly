@@ -1,0 +1,371 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#blackslider{
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    grid-template-columns: 100% 100%;
+    overflow: hidden;
+    
+ }
+ #blackslider>p{
+    width: 100%;
+    animation: blackslide 3s linear infinite;
+ }
+  
+@keyframes blackslide{
+    0%{
+       margin-left: -100%;
+    }
+    50%{
+        
+    }
+}
+ #mainslider{
+    height: 450px;
+    background-image: url("images/11.webp");
+    background-size: 100%;
+    animation: slider 30s linear infinite ;
+ }
+@keyframes slider{
+    0%{
+        background-image: url("images/11.webp");
+    }
+    14%{
+        background-image: url("images/12.webp");
+    }
+    28%{
+        background-image: url("images/13.webp");
+    }
+    42%{
+        background-image: url("images/14.webp");
+    }
+    56%{
+        background-image: url("images/15.webp");
+    }
+    70%{
+        background-image: url("images/16.webp");
+    }
+    85%{
+        background-image: url("images/17.webp");
+    }
+    10%{
+        background-image: url("images/18.webp");
+    }
+   
+}
+
+ #dicount{
+    width: 100%;
+    height: 450px;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    gap: 20px;
+    
+    grid-template-columns: repeat(3,1fr);
+    box-sizing: border-box;
+ }
+ .d1{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url("https://cdn.shopify.com/s/files/1/0248/3473/6191/files/asapimage---533-x-644-px_540x.jpg?v=1650550832");
+    background-size: cover;
+    color: white;
+   
+ }
+ .d2{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("https://cdn.shopify.com/s/files/1/0248/3473/6191/files/WEB_ASSET_2_540x.jpg?v=1650894933");
+    background-size: cover;
+    color: white;
+    
+ }
+.d3{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("https://cdn.shopify.com/s/files/1/0248/3473/6191/files/womens_tops_2_540x.jpg?v=1630508297");
+    background-size: cover;
+    color: white;
+}
+
+#dicount>div{
+    padding: 10px ;
+    line-height: 25px;
+    display: grid;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-items: center;
+    
+}
+#dicount>div>:nth-child(2){
+    font-size: 50px;
+    line-height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+#dicount>div>p{
+   margin-bottom: -30px;
+}
+#dicount>div>p+button{
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 60%;
+    text-align: center;
+
+    
+}
+section+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+#catogary{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    gap: 10px;
+    border: 1px soild red;
+    justify-content: space-evenly;
+    align-content: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+   
+}
+#catogary>div>img{
+    width: 50%;
+}
+#catogary>div{
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+   
+}
+#mainslider2{
+    height: 450px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0248/3473/6191/files/gucci_1944x.jpg?v=1630503443");
+    background-size: cover;
+    padding-bottom: 20px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    animation: slider 30s linear infinite ;
+    animation-direction: reverse;
+}
+@keyframes slider{
+    0%{
+        background-image: url("images/11.webp");
+        
+    }
+    14%{
+        background-image: url("images/12.webp");
+    }
+    28%{
+        background-image: url("images/13.webp");
+    }
+    42%{
+        background-image: url("images/14.webp");
+    }
+    56%{
+        background-image: url("images/15.webp");
+    }
+    70%{
+        background-image: url("images/16.webp");
+    }
+    85%{
+        background-image: url("images/17.webp");
+    }
+    10%{
+        background-image: url("images/18.webp");
+    }
+   
+}
+#catogary2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-content: center;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+ 
+
+}
+
+#catogary2>div>img{
+    width: 50%;
+}
+#catogary2>div{
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+}
+h1+button{
+    padding: 10px 40px;
+    background-color: transparent;
+    width: 10%;
+    margin: auto;
+   
+}
+hr{
+    border: 0.1px solid rgb(233, 223, 223);
+    margin: 20px 0px;
+    width: 100%;
+}
+hr+h1{
+    text-align: center;
+    margin: 50px;
+    font-family: Tiemann, serif;
+   
+    
+}
+#catogary3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-content: space-around;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+
+}
+
+#catogary3>div>img{
+    width: 50%;
+}
+#catogary3>div{
+    display: grid;
+   text-align: center;
+   justify-items: center;
+    
+}
+.viewbtn{
+    width: 100%;
+    text-align: center;
+}
+.viewbtn>button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+}
+#discount2{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    box-sizing: border-box;
+    padding: 20px 20px;
+ }
+ #discount2>div>img+p{
+    font-size: 30px;
+    margin: 5px;
+    font-family: Tiemann, serif;;
+ }
+ #discount2>div{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+ }
+ #discount2>div>img{
+    width: 100%;
+    
+ }
+#discount2>div>p+button{
+    padding: 10px 20px;
+    border-style: solid;
+    background-color: transparent;
+    margin: 5px;
+
+}
+.rd{
+    color: red;
+    font-size: 13px;
+}
+@media all and (max-width:750px){
+    #dicount{
+        grid-template-columns: 1fr;
+        height: 800px;
+    }
+    #catogary{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    #catogary2{
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    #catogary3{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 30px;
+    }
+    #catogary3>div{
+        display: grid;
+        align-content: flex-end;
+    }
+    #discount2{
+        grid-template-columns: 1fr;
+     }
+     #discount2>div>img+p{
+        font-size: 20px;
+        margin: 20px 0px;
+     }
+     #discount2>div>p+button{
+        font-size: 10px;
+        margin: 10px 0px;
+        background-color: transparent;
+        border-style: solid;
+    }
+    #mainslider{
+        height: 250px;
+    }
+    #mainslider2{
+        height: 250px;
+    }
+  
+}
+@media all and (min-width:1250px){
+    #dicount{
+        width: 80%;
+        margin: auto;
+    }
+    #catogary{
+        width: 80%;
+        margin: auto;
+    }
+    #catogary2{
+        width: 80%;
+        margin: auto;
+    }
+    #catogary3{
+        width: 80%;
+        margin: auto;
+    }
+    #discount2{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+

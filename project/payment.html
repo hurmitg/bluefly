@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Information</title>
+</head>
+<body>
+    <div id="paymentBox">
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?187388" alt="">
+        <div>
+            <span>Cart </span> >
+            <span>Information</span> >
+            <span><b>Payment</b></span>
+        </div>
+        <div id="info">
+            <p>Contact Information</p>
+            <div id="details">
+            </div>
+        </div>
+        <div>
+            <p>Payment</p>
+            All transactions are secure and encrypted.
+        </div>
+        <div id="form">
+                <div id="paymentHead">
+                    <h1>Card</h1>
+                    <img src="cards.jpg" alt="">
+                </div>
+            <form id="paymentForm" action="">
+                <input type="number" required id="cardNumber" placeholder="Card Number">
+                <input type="text" required id="cardName" placeholder="Name on Card">
+                <input type="text" required id="cardDate" placeholder="Expiration Date (MM/YY)">
+                <input type="number" required id="cvv" placeholder="Security Code">
+            </form>
+        </div>
+        
+        <div>
+            <input type="checkbox" class="agree" checked>
+            <label for="agree">Save my information for a faster checkout</label>
+        </div>
+        <div id="formBottom">
+            <p>< Return to Shipping</p>
+            <button for="paymentForm" type="submit">Pay Now</button>
+        </div>
+
+    </div>
+
+    <div id="discountsAndTotal">
+        <div id="infoCart">
+
+        </div>
+        <div id="finalTotal">
+            <p><span>Total</span> <span class="discounted">.007</span></p>
+        </div>
+    </div>
+    
+</body>
+<script src = "payment.js"></script>
+</html>

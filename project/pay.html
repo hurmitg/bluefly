@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    #payNow{
+        width: 30%;
+        border-radius: 20px;
+        padding: 20px;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: rgba(204, 253, 253, 0.461);
+    }
+    #payNow>p{
+        font-size: larger;
+    }
+    #payNow>input{
+        width: 80%;
+        padding: 15px 0%;
+        margin-bottom: 5%;
+        font-size: larger;
+        text-align: center;
+    }
+    #payNow>button{
+        width: 50%;
+        padding: 15px 0px;
+        font-size: large;
+        color: white;
+        background-color: green;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-bottom: 5%;
+    }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div id="payNow">
+        <p>An OTP has been sent to your registered Mobile Number</p>
+        <p>All payments are secured with Razorpay Gateway</p>
+        <h1>Enter Otp</h1>
+        <input type="password">
+        <button type="submit">Pay Now</button>
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector("#payNow>button");
+    btn.addEventListener("click", verify);
+
+    function verify(){
+        let otp = document.querySelector("#payNow>input").value;
+        if(otp==1234){
+            alert("Payment Successful, redirecting to Homepage.");
+            localStorage.removeItem("cartData");
+            window.location.href = "index.html";
+
+        } else {
+            alert("Uh-Oh, Invalid OTP.\n If your money has been deducted, it will be refunded.")
+        }
+    }
+</script>
+</html>

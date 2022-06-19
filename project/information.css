@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 57% 43%;
+
+}
+
+#infoBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5% 3% 3% 5%;
+}
+#infoBox>img{
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+#info{
+    border-top: 1px solid grey;
+    margin-top: 7%;
+    box-sizing: border-box;
+}
+
+#info>div{
+    display: flex;
+    align-items: center;
+    color: rgb(87, 87, 87);
+    /* justify-content: space-between; */
+}
+#info>div>img{
+    background-color: #D8D8D8;
+    border-radius: 8px;
+    width: 10%;
+    margin-right: 20px;
+}
+#infoForm{
+    margin-top: 5%;
+}
+#infoForm input{
+    border: 1.2px solid #D9D9D9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 98%;
+    margin-top: 15px;
+    padding: 15px;
+}
+#infoForm>#firstName, #infoForm>#lastName{
+    width: 48%;
+    margin-right: 1%;
+}
+#infoForm>#country, #infoForm>#state, #infoForm>#zip{
+    width: 31%;
+    margin-right: 1.8%;
+}
+
+#formBottom{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+#formBottom>button{
+    color: white;
+    padding: 3%;
+    font-weight: 600;
+    border-radius: 5px;
+    /* font-size: large; */
+    background-color: black;
+
+}
+
+#discountsAndTotal{
+    border-left: 1px solid rgba(128, 128, 128, 0.148);
+    background-color: rgba(234, 232, 232, 0.502);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#infoCart{
+    border-bottom: 1px solid rgba(183, 183, 183, 0.342);
+    width: 100%;
+    height: 40%;
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+
+#promo{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+    width: 100%;
+    padding: 5% 0%;
+}
+
+#promo>input{
+    width: 70%;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1.2px solid #D9D9D9;
+}
+#promo>button{
+    border: none;
+    width: 20%;
+    color: white;
+    padding: 3%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: black;
+    font-weight: 600;
+}
+#cartTotal, #finalTotal{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+
+#finalTotal{
+    font-size: 25px;
+    font-weight: 600;
+}
+.discount{
+    color: green;
+    font-weight: 600;
+}
+#cartTotal>p, #finalTotal>p{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.infoItem{
+    width: 95%;
+    height: 30%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infoItem>div:nth-child(1){
+ width: 20%;
+ position: relative;
+ overflow: hidden;
+}
+
+.infoItem>div:nth-child(1)>p{
+position: absolute;
+margin: 0;    
+height: 20px;
+width: 20px;
+padding-top: 3px;
+font-weight: 800;
+text-align: center;
+border-radius: 50%;
+top: 0;
+right: 0;
+color: white;
+background-color: #808080;
+}
+
+.infoItem img{
+    width: 70%;
+    border-radius: 10px;
+    border: 1.2px solid #D9D9D9;
+    object-fit: contain;
+}
+
+.infoItem>div:nth-child(2){
+    width: 60%;
+}
+.infoItem>div:nth-child(3){
+    width: 10%;
+}
+.total{
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+@media all and (max-width: 650px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #discountsAndTotal{
+        border-left: none;
+        background-color: white;
+    }
+    #infoCart{
+        overflow-x: scroll;
+        height: 50%;
+    }
+}
